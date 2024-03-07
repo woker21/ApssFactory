@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 10rem;
+}
+
+.container p {
+    padding: 10px;
+    
+}
+
+p{
+    color: black;
+    width: 600px;
+}
+
+.green{
+background-color: green;
+padding: 40px;
+border: 3px solid black;
+margin-left: 60%;
+}
+
+.yelow{
+background-color: yellow;
+border: dashed 10px white;
+margin-left: 35%;
+}
+
+.violeta{
+background-color: violet;
+}

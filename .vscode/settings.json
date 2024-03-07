@@ -1,0 +1,17 @@
+{
+  "editor.multiCursorModifier": "alt",  // Ir directamente a la definición de una función o variable al hacer ctrl + click sobre ella
+  "editor.wordWrap":"on",  // Activar wordwrap por defecto
+  "files.autoSave":"onFocusChange", // Salvar un fichero cuando pierda el foco
+  "editor.formatOnSave": true, // Formateado de código automático
+  "editor.formatOnPaste": true,
+  "editor.mouseWheelZoom": true,
+  "workbench.tree.indent": 25,
+  "editor.linkedEditing": true, // Al renombrer una etiqueta, se renombra la pareja
+  "workbench.tree.renderIndentGuides": "always",
+  "editor.guides.bracketPairs": true, // Añade coloreado a los pares de llaves y paréntesis
+  "editor.cursorSmoothCaretAnimation": "on", // El cursor hará una transición animada al cambiar de posición
+  "workbench.colorCustomizations": { 
+     "tab.activeBackground": "#f7775400" //Añadimos una línea roja sobre la pestaña activa
+
+  },
+}
