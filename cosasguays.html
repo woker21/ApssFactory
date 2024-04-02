@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" onchange="repetir()" placeholder="escribe el numero">
+    <div class="cosas">
+
+    </div>
+
+
+    <script>
+
+        const cosas = (event) => {
+            const number = document.querySelector('input').value;
+            let code = '';
+
+            for (let i = 0; i < number; i++) {
+                code += 'Cositas guays';
+            }
+
+            document.querySelector('.cosas').innerHTML = code;
+        }
+
+        document.querySelector('input').addEventListener('input', cosas);
+
+    </script>
+
+</body>
+
+</html>

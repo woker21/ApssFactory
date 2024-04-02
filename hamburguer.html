@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+.hamburguer {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 15px 0px 10px -15px;
+}
+
+.panel {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    transition: 0.8s;
+}
+
+.panel.active {
+    right: 0;
+    background-color: burlywood;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="panel">
+    <div class="hamburguer"></div>
+</div>
+
+<script>
+    const mostrar = ()=>{
+        document.querySelector(".panel").classList.toggle("active")
+
+    }
+
+    document.querySelector(".hamburguer").addEventListener("click", mostrar);
+
+</script>
+
+</body>
+</html>

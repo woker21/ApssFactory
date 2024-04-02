@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>calcularDNi</h1>
+    <p>Introduce el DNI : <input type="number" id="DNI" placeholder="78797876" /></p>
+    <p>La letra del DNI es : <input type="text" value="" id="result" readonly="" /></p>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+        const calcular = () => {
+
+            const DNI = Number(document.querySelector("#DNI").value)
+
+            var letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+
+            var letra = "";
+
+            let r;
+
+            if (DNI.toString().length === 8 &&  !isNaN(DNI)) {
+
+                r = DNI.length % 23;
+
+                letra = letras.charAt(r)
+
+                document.querySelector("#result").value = letra
+
+            }
+
+            else{
+
+                throw console.error("Numero falso de DNI");
+
+            }
+        }
+
+        document.querySelector("button").addEventListener("click", calcular)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .barra_wrapper {
+            width: 500px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        .rojo {
+            height: 100%;
+            background: red;
+            animation: muevete 1s forwards;
+        }
+
+        .barrita {
+            background: url(https://pablomonteserin.com/res/html5/ex/animations/keyframes/barrita-corazones/corazon-mask.png);
+            background-size: auto 100%;
+            height: 100%;
+            width: 100%;
+        }
+
+        @keyframes muevete {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<h1>Animación usando CSS de barrita de habilidad con imágen de fondo</h1>
+<div class="barra_wrapper">
+    <div class="rojo">
+        <div class="barrita">
+
+        </div>
+    </div>
+</div>
+
+<body>
+
+
+
+</body>
+
+</html>
